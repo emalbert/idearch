@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/**** Variables ****/
+/**** Resets Generales ****/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*.container-fluid, .navbar {*/
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*** Seteo de Etiquetas ***/
+body {
+  font-family: "montserrat", sans-serif;
+  font-size: fuente-tamaño;
+}
+
+p {
+  padding: 16px 0px;
+  line-height: 32px;
+  margin: 0px;
+}
+
+hr {
+  width: 50px;
+  margin: 0px 0px 8px 0px;
+  border: 2px solid #FF8500;
+  opacity: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*** Seteo de clases genéricas ***/
+.centrado-flex, .seccion-parrafo, .item-proyecto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulos, .seccion__titulo, .titulo-proyecto {
+  padding-top: 64px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.estilos-boton, .btn-cta, .btn-formulario {
+  padding: 12px 24px;
+  border: 1px solid #a14e00;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 192px;
+  background-color: #FF8500;
+}
+
+.estilos-boton:hover, .btn-cta:hover, .btn-formulario:hover {
+  background-color: #c76700;
+}
+
+.seccion__titulo {
+  font-weight: 300;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.seccion-parrafo, .item-proyecto {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 64px;
+}
+
+.seccion__linea {
+  width: 50px;
+  margin-bottom: 40px;
+}
+
+#about, #servicios, #proyectos, #contacto {
+  margin-top: 120px;
+}
+
+/*** Sección Header ***/
+.navbar-expand-lg .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 1em;
+}
+
+.me-auto {
+  margin-right: 1em !important;
+}
+
+.navbar-dark .navbar-toggler {
+  margin: 1em;
+}
+
+.navbar-nav .nav-item {
+  padding-right: 8px;
+}
+
+.navbar-brand img {
+  width: 400px;
+}
+
+/*** Fin Sección Header ***/
+/*** Sección Portada ***/
+.portada-cta:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.479);
+  position: absolute;
+}
+
+.portada-cta {
+  position: relative;
+  background-image: url("../images/portada-06.jpg");
+  padding-top: 450px;
+  padding-bottom: 80px;
+  height: 1080px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.portada-cta div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  z-index: 1;
+  position: relative;
+}
+
+.portada-cta div h1 {
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  /* Animaciones */
+  -webkit-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+.portada-cta div h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  /* Animaciones */
+  -webkit-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.portada-cta div p {
+  padding-top: 32px;
+  color: white;
+  font-weight: 400;
+}
+
+@-webkit-keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.portada-linea {
+  margin: 0px;
+  width: 100px;
+}
+
+.btn-cta {
+  margin-bottom: 64px;
+  /* Animaciones */
+  -webkit-animation: popIn-btn 1s forwards;
+  animation: popIn-btn 1s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  opacity: 0;
+}
+
+@-webkit-keyframes popIn-btn {
+  0% {
+    width: 0px;
+    height: 56px;
+    /*background: #FF8500;
+      /*border: 0px solid #ddd;*/
+    opacity: 0;
+    /*border: 2px solid #fff;*/
+  }
+  100% {
+    width: 192px;
+    height: 56px;
+    /*border: 2px solid #fff;*/
+    opacity: 1;
+  }
+}
+
+@keyframes popIn-btn {
+  0% {
+    width: 0px;
+    height: 56px;
+    /*background: #FF8500;
+      /*border: 0px solid #ddd;*/
+    opacity: 0;
+    /*border: 2px solid #fff;*/
+  }
+  100% {
+    width: 192px;
+    height: 56px;
+    /*border: 2px solid #fff;*/
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .portada-cta {
+    padding-top: 400px;
+    padding-bottom: 200px;
+  }
+  .portada-cta div {
+    padding-left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portada-cta p {
+    text-align: center;
+  }
+}
+
+/*** Fin Sección Portada ***/
+/*** Seccion Nosotros ***/
+#about {
+  background: white;
+  color: #000;
+}
+
+/*** Fin Sección Nosotros ***/
+/*** Sección Servicios ***/
+.servicios__fondo:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.315);
+  position: absolute;
+}
+
+.servicios__fondo {
+  position: relative;
+  background-image: url("../images/servicios-01.jpg");
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.servicios__frente {
+  position: relative;
+  z-index: 1;
+}
+
+.servicios__columna {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+  min-height: 800px;
+}
+
+.servicios__columna h3, .servicios__columna p {
+  color: #FFF;
+}
+
+@media (max-width: 1999px) {
+  .servicios__columna {
+    min-height: 400px;
+  }
+}
+
+/*** Fin Sección Servicios ***/
+/*** Sección Proyectos ***/
+.item-proyecto {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e0e0e0;
+  margin-top: 40px;
+  padding-bottom: 128px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.item-proyecto img {
+  padding-top: 32px;
+}
+
+@media (max-width: 1200px) {
+  .item-proyecto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item-proyecto img {
+    width: 75%;
+    height: auto;
+    margin: 16px auto;
+  }
+  .proyectos__imagen {
+    width: 70% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .proyectos__seccion-1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .proyectos__seccion-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/*** Fin Sección Proyectos ***/
+/*** Sección Contacto ***/
+.contacto-flex {
+  margin-top: 64px;
+}
+
+.contacto-flex ul {
+  list-style: none;
+}
+
+.contacto-flex li {
+  padding-bottom: 32px;
+}
+
+.contacto-flex label {
+  padding-bottom: 8px;
+  padding-top: 16px;
+}
+
+.lista-resaltado {
+  font-weight: 600;
+}
+
+.btn-formulario {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  min-width: 256px;
+}
+
+button {
+  font-size: 12px;
+}
+
+input, optgroup, select, textarea {
+  font-size: 12px;
+  min-width: 400px;
+}
+
+/** Media Queries Contacto**/
+@media (max-width: 1199px) {
+  .contacto-flex ul {
+    padding-left: 0px;
+  }
+}
+
+/*** Fin Sección Contacto ***/
+/*** Sección Footer  ***/
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.75em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #E0FF00;
+}
+
+/*** Fin Sección Footer ***/
+/*** Estilos 404 ***/
+.cuerpo-404 {
+  background-color: #FF8500;
+}
+
+.alineacion-404 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titulo-404 {
+  font-weight: 900;
+  font-size: 12em;
+  padding-top: 300px;
+  padding-bottom: 64px;
+  opacity: 80%;
+}
+
+.subtitulo-404 {
+  font-weight: 600;
+  font-size: 2em;
+  padding-bottom: 64px;
+}
+
+.btn-404 {
+  min-width: 200px;
+  padding: 8px 16px;
+}
+/*# sourceMappingURL=estilos.css.map */
