@@ -15,7 +15,7 @@
 /*** Seteo de Etiquetas ***/
 body {
   font-family: "montserrat", sans-serif;
-  font-size: fuente-tamaño;
+  font-size: 1em;
 }
 
 p {
@@ -393,11 +393,11 @@ hr {
 }
 
 button {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 input, optgroup, select, textarea {
-  font-size: 12px;
+  font-size: 0.75em;
   min-width: 400px;
 }
 

@@ -1,7 +1,11 @@
 /**** Variables ****/
 $fuente: 'montserrat', sans-serif;
-$fuente-tamaño: 14px;
-$fuente-tamaño-small: 12px;
+$fuente-tamaño: 1em;
+$fuente-tamaño-small: 0.75em;
+
+@media (max-width:768px) {
+    $fuente-tamaño: 1.5em;
+}
 
 $parrafo-padding: 16px 0px;
 $parrafo-line-height: 32px;
