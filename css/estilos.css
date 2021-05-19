@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  padding: 16px 0px;
+  padding: 8px 0px;
   line-height: 32px;
   margin: 0px;
 }
@@ -74,7 +74,6 @@ hr {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  /*margin-bottom: 64px;*/
 }
 
 .seccion__linea {
@@ -103,7 +102,7 @@ hr {
 }
 
 .navbar-nav .nav-item {
-  padding-right: 8px;
+  padding-right: 16px;
 }
 
 .navbar-brand img {
@@ -213,6 +212,10 @@ hr {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   opacity: 0;
+}
+
+.btn-cta:hover {
+  background-color: #c76700;
 }
 
 @-webkit-keyframes popIn-btn {
@@ -393,16 +396,34 @@ hr {
   min-width: 256px;
 }
 
-/*
-button {
-    font-size: $fuente-tamanio-small;
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-left: 4px;
 }
 
-input, optgroup, select, textarea {
-    font-size: $fuente-tamanio-small;
-    min-width: 400px;
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-left: 4px;
 }
-*/
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+select {
+  font-size: 0.75rem;
+}
+
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {
   .contacto-flex ul {

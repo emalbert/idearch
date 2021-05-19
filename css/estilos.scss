@@ -42,7 +42,6 @@ hr {
     padding-top: 64px;
     padding-bottom: 8px;
     text-align: $subtitulo-alineacion;
-
 }
 
 .estilos-boton {
@@ -76,8 +75,6 @@ hr {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    /*margin-bottom: 64px;*/
-
 }
 
 .seccion__linea {
@@ -107,7 +104,7 @@ hr {
 .navbar-nav {
 
     .nav-item {
-        padding-right: 8px;
+        padding-right: 16px;
     }
 }
 
@@ -214,6 +211,10 @@ hr {
     animation: popIn-btn 1s forwards;
     animation-delay: 3s;
     opacity: 0;
+}
+
+.btn-cta:hover {
+    background-color: #c76700;
 }
 
 @keyframes popIn-btn {
@@ -395,16 +396,17 @@ hr {
     margin-bottom: 32px;
     min-width: 256px;
 }
-/*
-button {
-    font-size: $fuente-tamanio-small;
+
+input::placeholder, textarea::placeholder {
+    font-size: 0.75rem;
+    font-style: italic;
+    padding-left: 4px;
 }
 
-input, optgroup, select, textarea {
-    font-size: $fuente-tamanio-small;
-    min-width: 400px;
+select  {
+    font-size: 0.75rem;
 }
-*/
+
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {
     .contacto-flex {
