@@ -16,7 +16,6 @@
 /*** Seteo de Etiquetas ***/
 body {
     font-family: $fuente;
-    font-size:$fuente-tamaño;
 }
 
 p {
@@ -30,8 +29,6 @@ hr {
     margin: $linea-margin;
     border: $linea-grosor;
     opacity: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*** Seteo de clases genéricas ***/
@@ -56,6 +53,7 @@ hr {
     letter-spacing: $btn-letter-spacing;
     width: $btn-width;
     background-color: $color-naranja;
+    margin-top: 1rem;
 }
 
 .estilos-boton:hover {
@@ -78,7 +76,7 @@ hr {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 64px;
+    /*margin-bottom: 64px;*/
 
 }
 
@@ -136,7 +134,7 @@ hr {
 .portada-cta {
     position: relative;
     background-image: $portada-imagen;
-    padding-top: 450px;
+    padding-top: 300px;
     padding-bottom: 80px;
     height: 1080px;
     background-size: cover;
@@ -154,7 +152,6 @@ hr {
 
         h1 {
             color: $portada-texto-color;
-            font-size: 5em;
             text-transform: uppercase;
 
             /* Animaciones */
@@ -167,7 +164,6 @@ hr {
 
         h3 {
             color: $portada-texto-color;
-            font-size: 2em;
             font-weight: $portada-subtitulo-peso;
 
             /* Animaciones */
@@ -183,6 +179,11 @@ hr {
             color:$portada-texto-color;
             font-weight: $portada-texto-peso;
         }
+
+        button {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
     }
 }
 
@@ -196,7 +197,7 @@ hr {
   }
 
 .portada-linea {
-    margin:0px;
+    margin-left: 16px;
     width: 100px;
 }
 
@@ -204,6 +205,7 @@ hr {
 
     @extend .estilos-boton;
 
+    margin-left: 12px; 
     margin-bottom: 64px;
 
     /* Animaciones */
@@ -235,7 +237,6 @@ hr {
 
     .portada-cta {
         
-        padding-top: 400px;
         padding-bottom: 200px;
 
         div {
@@ -243,7 +244,7 @@ hr {
             align-items: center;
         }
 
-        p {
+        h1, h3, p {
             text-align: center;
         }
     }
@@ -394,16 +395,16 @@ hr {
     margin-bottom: 32px;
     min-width: 256px;
 }
-
+/*
 button {
-    font-size: $fuente-tamaño-small;
+    font-size: $fuente-tamanio-small;
 }
 
 input, optgroup, select, textarea {
-    font-size: $fuente-tamaño-small;
+    font-size: $fuente-tamanio-small;
     min-width: 400px;
 }
-
+*/
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {
     .contacto-flex {

@@ -15,7 +15,6 @@
 /*** Seteo de Etiquetas ***/
 body {
   font-family: "montserrat", sans-serif;
-  font-size: 1em;
 }
 
 p {
@@ -25,12 +24,10 @@ p {
 }
 
 hr {
-  width: 50px;
+  width: 100px;
   margin: 0px 0px 8px 0px;
   border: 2px solid #FF8500;
   opacity: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*** Seteo de clases genéricas ***/
@@ -60,6 +57,7 @@ hr {
   letter-spacing: 2px;
   width: 192px;
   background-color: #FF8500;
+  margin-top: 1rem;
 }
 
 .estilos-boton:hover, .btn-cta:hover, .btn-formulario:hover {
@@ -76,11 +74,11 @@ hr {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 64px;
+  /*margin-bottom: 64px;*/
 }
 
 .seccion__linea {
-  width: 50px;
+  width: 100px;
   margin-bottom: 40px;
 }
 
@@ -127,7 +125,7 @@ hr {
 .portada-cta {
   position: relative;
   background-image: url("../images/portada-06.jpg");
-  padding-top: 450px;
+  padding-top: 300px;
   padding-bottom: 80px;
   height: 1080px;
   background-size: cover;
@@ -152,7 +150,6 @@ hr {
 
 .portada-cta div h1 {
   color: white;
-  font-size: 5em;
   text-transform: uppercase;
   /* Animaciones */
   -webkit-animation: mainFadeIn 2s forwards;
@@ -164,8 +161,7 @@ hr {
 
 .portada-cta div h3 {
   color: white;
-  font-size: 2em;
-  font-weight: 400;
+  font-weight: 200;
   /* Animaciones */
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
@@ -178,6 +174,11 @@ hr {
   padding-top: 32px;
   color: white;
   font-weight: 400;
+}
+
+.portada-cta div button {
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 @-webkit-keyframes mainFadeIn {
@@ -199,11 +200,12 @@ hr {
 }
 
 .portada-linea {
-  margin: 0px;
+  margin-left: 16px;
   width: 100px;
 }
 
 .btn-cta {
+  margin-left: 12px;
   margin-bottom: 64px;
   /* Animaciones */
   -webkit-animation: popIn-btn 1s forwards;
@@ -249,7 +251,6 @@ hr {
 
 @media (max-width: 991px) {
   .portada-cta {
-    padding-top: 400px;
     padding-bottom: 200px;
   }
   .portada-cta div {
@@ -258,7 +259,7 @@ hr {
         -ms-flex-align: center;
             align-items: center;
   }
-  .portada-cta p {
+  .portada-cta h1, .portada-cta h3, .portada-cta p {
     text-align: center;
   }
 }
@@ -392,15 +393,16 @@ hr {
   min-width: 256px;
 }
 
+/*
 button {
-  font-size: 0.75em;
+    font-size: $fuente-tamanio-small;
 }
 
 input, optgroup, select, textarea {
-  font-size: 0.75em;
-  min-width: 400px;
+    font-size: $fuente-tamanio-small;
+    min-width: 400px;
 }
-
+*/
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {
   .contacto-flex ul {

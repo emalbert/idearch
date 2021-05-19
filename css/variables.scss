@@ -1,11 +1,5 @@
 /**** Variables ****/
 $fuente: 'montserrat', sans-serif;
-$fuente-tamaño: 1em;
-$fuente-tamaño-small: 0.75em;
-
-@media (max-width:768px) {
-    $fuente-tamaño: 1.5em;
-}
 
 $parrafo-padding: 16px 0px;
 $parrafo-line-height: 32px;
@@ -20,7 +14,7 @@ $btn-width: 192px;
 $color-naranja: #FF8500;
 $color-naranja-hover: #c76700;
 
-$linea-width: 50px;
+$linea-width: 100px;
 $linea-grosor: 2px solid $color-naranja;
 $linea-margin: 0px 0px 8px 0px;
 
@@ -32,7 +26,7 @@ $subtitulo-mayusculas: uppercase;
 
 $portada-imagen: url("../images/portada-06.jpg");
 $portada-texto-color: rgb(255, 255, 255);
-$portada-subtitulo-peso: 400;
+$portada-subtitulo-peso: 200;
 $portada-texto-peso: 400;
 
 $empresa-fondo: rgb(255, 255, 255);
