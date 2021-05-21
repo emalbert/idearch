@@ -76,7 +76,12 @@ hr {
     padding-left: 5%;
     padding-right: 5%;
 }
-
+@media (max-width: 991px) {
+    .seccion-parrafo {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
 .seccion__linea {
     width: $linea-width;
     margin-bottom: 40px;
@@ -159,7 +164,7 @@ hr {
             opacity: 0;
         }
 
-        h3 {
+        h2 {
             color: $portada-texto-color;
             font-weight: $portada-subtitulo-peso;
 
@@ -241,12 +246,15 @@ hr {
         padding-bottom: 200px;
 
         div {
-            padding-left: 0px;
             align-items: center;
         }
 
         h1, h3, p {
             text-align: center;
+        }
+        p {
+            font-size: 24px;
+            line-height: 40px;
         }
     }
 }
@@ -281,6 +289,15 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .servicios__frente {
@@ -290,13 +307,32 @@ hr {
 
 .servicios__columna {
     background-color:rgba(0, 0, 0, 0.6);
-    padding:40px;
+    padding:80px 40px;
     text-align: center;
     margin-bottom: 32px;
-    min-height: 600px;
+    min-height: 800px;
+    color: #FFF;
 
-    h3, p {
-        color: #FFF;
+    h3 {
+        color:#FF8500;
+        padding-bottom: 32px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .servicios__columna {
+        
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            padding: 24px;
+        }
+
+        h3 {
+            padding-bottom: 8px;
+        }
     }
 }
 
@@ -367,9 +403,10 @@ hr {
 
 
 /*** Sección Contacto ***/
+
 .contacto-flex {
     margin-top: 64px;
-    
+
     ul {
         list-style: none;
     }
@@ -384,8 +421,17 @@ hr {
     }
 }
 
-.lista-resaltado {
-    font-weight: 600;
+#contacto-formulario {
+    background-color: rgb(216, 216, 216);
+    padding: 64px 32px;
+}
+
+.info-contacto {
+    padding-left: 24px;
+}
+.info-contacto a {
+    color: #FE8400;
+    text-decoration: none;
 }
 
 .btn-formulario {
