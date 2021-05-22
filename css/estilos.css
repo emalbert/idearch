@@ -231,7 +231,6 @@ hr {
 }
 
 .btn-cta {
-  margin-left: 12px;
   margin-bottom: 64px;
   /* Animaciones */
   -webkit-animation: popIn-btn 1s forwards;
