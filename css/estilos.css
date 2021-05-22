@@ -6,7 +6,6 @@
   padding: 0px;
 }
 
-/*.container-fluid, .navbar {*/
 .container-fluid {
   padding-left: 5%;
   padding-right: 5%;
@@ -64,6 +63,11 @@ hr {
   background-color: #c76700;
 }
 
+.estilos-boton a, .btn-cta a, .btn-formulario a {
+  text-decoration: none;
+  color: #000;
+}
+
 .seccion__titulo {
   font-weight: 300;
   font-size: 48px;
@@ -92,12 +96,28 @@ hr {
   margin-top: 120px;
 }
 
+#contacto {
+  margin-bottom: 64px;
+}
+
+.sombra {
+  background: #e0e0e0;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.sombra_boton {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
 /*** Sección Header ***/
 .navbar-expand-lg .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-left: 1em;
+  padding-top: 1em;
 }
 
 .me-auto {
@@ -109,7 +129,7 @@ hr {
 }
 
 .navbar-nav .nav-item {
-  padding-right: 16px;
+  padding-right: 20px;
 }
 
 .navbar-brand img {
@@ -329,7 +349,7 @@ hr {
 
 .servicios__columna h3 {
   color: #FF8500;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   font-size: 32px;
 }
 
@@ -400,16 +420,13 @@ hr {
 
 /*** Fin Sección Proyectos ***/
 /*** Sección Contacto ***/
-.contacto-flex {
-  margin-top: 64px;
-}
-
 .contacto-flex ul {
   list-style: none;
+  padding-top: 32px;
 }
 
 .contacto-flex li {
-  padding-bottom: 32px;
+  line-height: 64px;
 }
 
 .contacto-flex label {
@@ -417,8 +434,43 @@ hr {
   padding-top: 16px;
 }
 
+.contacto-flex h3 {
+  font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  .contacto-flex label {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .contacto-flex li {
+    font-size: 24px;
+    line-height: 64px;
+  }
+  .contacto-flex p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .contacto-flex h3 {
+    font-size: 2.5rem;
+  }
+}
+
+.contacto__recuadro {
+  background-color: #e7e5e5;
+  margin: 16px;
+  padding: 24px;
+}
+
+.contacto__informacion {
+  background-color: #FF8500;
+  height: 550px;
+  margin: 64px;
+  padding: 32px;
+  max-width: 480px;
+}
+
 #contacto-formulario {
-  background-color: #d8d8d8;
   padding: 64px 32px;
 }
 
@@ -427,8 +479,12 @@ hr {
 }
 
 .info-contacto a {
-  color: #FE8400;
   text-decoration: none;
+  color: #000;
+}
+
+.info-contacto a:hover {
+  color: #ffffff;
 }
 
 .btn-formulario {
@@ -489,6 +545,66 @@ footer a {
 }
 
 /*** Fin Sección Footer ***/
+/*** Estilos Página Proyecto ***/
+#habitacion, #cocina, #comedor {
+  padding-top: 8rem;
+}
+
+#habitacion {
+  padding-bottom: 8rem;
+}
+
+.grid-wrapper img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 /*** Estilos 404 ***/
 .cuerpo-404 {
   background-color: #FF8500;
