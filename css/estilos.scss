@@ -81,12 +81,14 @@ hr {
     padding-left: 5%;
     padding-right: 5%;
 }
+/*
 @media (max-width: 991px) {
     .seccion-parrafo {
         font-size: 24px;
         line-height: 40px;
     }
 }
+*/
 .seccion__linea {
     width: $linea-width;
     margin-bottom: 40px;
@@ -137,10 +139,21 @@ hr {
 .navbar-brand {
 
     img {
-        width: 400px;
+        width: 80%;
     }
 }
 
+@media screen and (max-width:600px) {
+    .navbar-brand {
+
+        img {
+            width: 60%;
+        }
+    }
+    .navbar-toggler {
+        margin-left: 0px;
+    }
+}
 /*** Fin Sección Header ***/
 
 /*** Sección Portada ***/
@@ -259,26 +272,6 @@ hr {
     }
 }
 
-@media (max-width: 991px) {
-
-    .portada-cta {
-        
-        padding-bottom: 200px;
-
-        div {
-            align-items: center;
-        }
-
-        h1, h3, p {
-            text-align: center;
-        }
-        p {
-            font-size: 24px;
-            line-height: 40px;
-        }
-    }
-}
-
 /*** Fin Sección Portada ***/
 
 /*** Seccion Nosotros ***/
@@ -337,22 +330,6 @@ hr {
         color:#FF8500;
         padding-bottom: 16px;
         font-size: 32px;
-    }
-}
-
-@media (max-width: 991px) {
-    
-    .servicios__columna {
-        
-        p {
-            font-size: 24px;
-            line-height: 40px;
-            padding: 24px;
-        }
-
-        h3 {
-            padding-bottom: 8px;
-        }
     }
 }
 
@@ -434,6 +411,11 @@ hr {
     
     li{
         line-height: 64px;
+
+        svg {
+            height: 24px;
+            width: 24px;
+        }
     }
 
     label {
@@ -446,27 +428,6 @@ hr {
     }
 
 }
-
-@media (max-width: 991px) {
-    .contacto-flex {
-        label {
-            font-size: 24px;
-            line-height: 40px;
-        }
-        li {
-            font-size: 24px;
-            line-height: 64px;
-        }
-        p {
-            font-size: 24px;
-            line-height: 40px;
-        }
-        h3 {
-            font-size: 2.5rem;
-        }
-    }
-}
-
 
 .contacto__recuadro {
     background-color: rgb(231, 229, 229);
@@ -482,9 +443,7 @@ hr {
     max-width: 480px;
 }
 
-#contacto-formulario {
-    padding: 64px 32px;
-}
+
 
 .info-contacto {
     padding-left: 24px;
@@ -516,6 +475,10 @@ select  {
     font-size: 0.75rem;
 }
 
+textarea {
+    width: 100%;
+}
+
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {
     .contacto-flex {
@@ -525,6 +488,49 @@ select  {
     }
 }
 
+#contacto-formulario {
+    padding: 64px 32px;
+}
+
+@media (max-width: 500px) {
+    .contacto-flex {
+
+        li{
+            font-size: 0.9rem;
+            line-height: 3rem;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+    
+    .contacto__recuadro {
+        margin: 8px;
+        padding: 16px;
+    }
+
+    .info-contacto {
+        padding-left: 8px;
+    }
+
+    #contacto-formulario {
+        padding: 32px 8px;
+    }
+
+}
+
+
 /*** Fin Sección Contacto ***/
 
 /*** Sección Footer  ***/
@@ -533,10 +539,12 @@ footer {
     
     background-color: #000;
     color: #fff;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
 
     a {
         text-decoration: none;
