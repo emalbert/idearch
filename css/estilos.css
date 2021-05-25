@@ -80,14 +80,6 @@ hr {
   padding-right: 5%;
 }
 
-/*
-@media (max-width: 991px) {
-    .seccion-parrafo {
-        font-size: 24px;
-        line-height: 40px;
-    }
-}
-*/
 .seccion__linea {
   width: 100px;
   margin-bottom: 40px;
@@ -137,12 +129,13 @@ hr {
   width: 80%;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-brand img {
-    width: 60%;
-  }
+@media screen and (max-width: 700px) {
   .navbar-toggler {
     margin-left: 0px;
+  }
+  .navbar-brand {
+    margin-right: 0px;
+    width: 240px;
   }
 }
 
