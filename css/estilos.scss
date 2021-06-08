@@ -434,7 +434,16 @@ hr {
     max-width: 480px;
 }
 
+.formulario {
+    input {
+        margin-bottom: 16px;
+        width: $formulario-elementos-tamanio;
+    }
 
+    textarea {
+        width:$formulario-elementos-tamanio;
+    }   
+}
 
 .info-contacto {
     padding-left: 24px;
@@ -466,9 +475,6 @@ select  {
     font-size: 0.75rem;
 }
 
-textarea {
-    width: 100%;
-}
 
 /** Media Queries Contacto**/
 @media (max-width: 1199px) {

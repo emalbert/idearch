@@ -430,6 +430,15 @@ hr {
   max-width: 480px;
 }
 
+.formulario input {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.formulario textarea {
+  width: 100%;
+}
+
 .info-contacto {
   padding-left: 24px;
 }
@@ -475,10 +484,6 @@ input::placeholder, textarea::placeholder {
 
 select {
   font-size: 0.75rem;
-}
-
-textarea {
-  width: 100%;
 }
 
 /** Media Queries Contacto**/
